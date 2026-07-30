@@ -1,0 +1,51 @@
+{
+  "name": "secscan",
+  "version": "1.0.0",
+  "description": "AI security scanner agent (Pi SDK + OpenCode Zen + Sengine)",
+  "type": "module",
+  "license": "MIT",
+  "author": "akemmanuel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akemmanuel/secscan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akemmanuel/secscan/issues"
+  },
+  "homepage": "https://github.com/akemmanuel/secscan#readme",
+  "bin": {
+    "secscan": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "scan": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "packageManager": "pnpm@11.0.9",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "^0.83.0",
+    "@earendil-works/pi-coding-agent": "^0.83.0",
+    "typebox": "^1.0.17"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "protobufjs",
+      "@google/genai"
+    ]
+  }
+}

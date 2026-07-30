@@ -1,0 +1,5 @@
+# Single-package project. allowBuilds satisfies pnpm 11 lifecycle policy.
+allowBuilds:
+  "@google/genai": true
+  esbuild: true
+  protobufjs: true

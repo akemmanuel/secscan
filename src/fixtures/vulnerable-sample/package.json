@@ -1,0 +1,14 @@
+{
+  "name": "vulnerable-sample",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "lodash": "^4.17.15",
+    "request": "^2.88.0",
+    "jquery": "1.12.4"
+  },
+  "scripts": {
+    "setup": "curl https://example.com/install.sh | bash"
+  }
+}
